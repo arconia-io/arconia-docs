@@ -1,0 +1,67 @@
+# https://taskfile.dev
+
+version: '3'
+
+env:
+  ANTORA_SITE_URL: http://localhost:9090
+
+tasks:
+  prepare:
+    desc: Prepare npm dependencies.
+    cmds:
+      - npm install
+
+  dev:
+    desc: Build the documentation website for development.
+    cmds:
+      - npx antora antora-playbook.yml --fetch --html-url-extension-style=default
+    sources:
+      - 'antora-playbook.yml'
+      - 'local-antora-playbook.yml'
+      - 'package.json'
+    watch: true
+  
+  serve:
+    desc: Serve documentation from a local HTTP server.
+    cmds:
+      - npx http-server build/site --watch --port 9090 -c-1
+  
+  build:
+    desc: Build documentation for production as a static website.
+    cmds:
+      - npm ci
+      - npx antora antora-playbook.yml --fetch --url ${ANTORA_SITE_URL}
+
+  build-oci:
+    desc: Build documentation for production as a static website served by NGINX.
+    cmds:
+      - npm ci
+      - npx antora antora-playbook.yml --fetch --redirect-facility=nginx --url ${ANTORA_SITE_URL}
+      - cp -f nginx.conf build/site
+
+  package:
+    desc: Package documentation as an OCI image.
+    deps:
+      - build
+    cmds:
+      - |-
+        pack build ghcr.io/arconia-io/docs \
+          --buildpack docker.io/paketobuildpacks/nginx \
+          --builder docker.io/paketobuildpacks/builder-jammy-base \
+          --path build/site
+
+  run:
+    desc: Run documentation as an OCI container.
+    deps:
+      - package
+    cmds:
+      - podman run --rm -e NGINX_PORT=9090 -e PORT_IN_REDIRECT=on -p 9090:8080 ghcr.io/arconia-io/docs
+  
+  publish:
+    desc: Publish documentation as an OCI.
+    deps:
+      - package
+    cmds:
+      - podman push ghcr.io/arconia-io/docs:latest
+      - podman tag ghcr.io/arconia-io/docs:latest ghcr.io/arconia-io/docs:$(git rev-parse HEAD)
+      - podman push ghcr.io/arconia-io/docs:$(git rev-parse HEAD)

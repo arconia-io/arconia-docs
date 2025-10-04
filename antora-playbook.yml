@@ -1,0 +1,72 @@
+site:
+  title: Arconia
+  url: http://localhost:9090
+  start_page: arconia::index.adoc
+  robots: allow
+
+content:
+  sources:
+  - url: https://github.com/arconia-io/arconia.git
+    start_path: docs
+    branches: ~
+    tags:
+    - v*
+    - '!v0.0.*'
+    - '!v0.1.*'
+    - '!v0.2.*'
+    - '!v0.3.*'
+    - '!v0.5.*'
+    - '!v0.6.*'
+    - '!v0.7.*'
+    - '!v0.8.*'
+    - '!v0.9.*'
+    - '!v0.10.0'
+    - '!v0.10.1'
+    - '!v0.10.2'
+    - '!v0.14.0'
+    - '!v0.16.0'
+    version:
+      v(?<version>+({0..9}.+({0..9}.+({0..9})): $<version>
+  - url: https://github.com/arconia-io/arconia-cli.git
+    start_path: docs
+    branches: ~
+    tags:
+    - v*
+    - '!v0.0.*'
+    - '!v0.1.*'
+    - '!v0.2.*'
+    - '!v0.3.*'
+    - '!v0.4.*'
+    - '!v0.5.0'
+    - '!v0.5.1'
+    version:
+      v(?<version>+({0..9}.+({0..9}.+({0..9})): $<version>
+
+git:
+  fetch_concurrency: 3
+  read_concurrency: 3
+
+antora:
+  extensions:
+    - require: "@antora/lunr-extension"
+      index_latest_only: true
+      languages: [en]
+
+asciidoc:
+  extensions:
+    - '@asciidoctor/tabs'
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+  supplemental_files: ./supplemental-ui
+
+urls:
+  html_extension_style: indexify
+  latest_prerelease_version_segment: snapshot
+  latest_version_segment: latest
+  latest_version_segment_strategy: redirect:to
+
+output:
+  clean: true
+  dir: ./build/site
