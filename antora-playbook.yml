@@ -25,6 +25,7 @@ content:
     - '!v0.10.2'
     - '!v0.14.0'
     - '!v0.16.0'
+    - '!v0.17.0'
     version:
       v(?<version>+({0..9}).+({0..9}).+({0..9})): $<version>
   - url: https://github.com/arconia-io/arconia-cli.git
@@ -39,6 +40,7 @@ content:
     - '!v0.4.*'
     - '!v0.5.0'
     - '!v0.5.1'
+    - '!v0.7.0'
     version:
       v(?<version>+({0..9}).+({0..9}).+({0..9})): $<version>
 
@@ -63,7 +65,7 @@ ui:
 
 urls:
   html_extension_style: indexify
-  #latest_prerelease_version_segment: snapshot
+  latest_prerelease_version_segment: snapshot
   latest_version_segment: latest
   latest_version_segment_strategy: redirect:to
 
