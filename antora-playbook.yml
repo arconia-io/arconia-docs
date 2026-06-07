@@ -23,11 +23,13 @@ content:
     - '!v0.10.*'
     - '!v0.11.*'
     - '!v0.12.*'
-    - '!v0.14.0'
-    - '!v0.16.0'
-    - '!v0.17.0'
-    - '!v0.18.0'
-    - '!v0.18.1'
+    - '!v0.13.*'
+    - '!v0.14.*'
+    - '!v0.15.*'
+    - '!v0.16.*'
+    - '!v0.17.*'
+    - '!v0.18.*'
+    - '!v0.19.*'
     version:
       v(?<version>+({0..9}).+({0..9}).+({0..9})): $<version>
   - url: https://github.com/arconia-io/arconia-cli.git
@@ -42,8 +44,20 @@ content:
     - '!v0.4.*'
     - '!v0.5.*'
     - '!v0.6.*'
-    - '!v0.7.0'
-    - '!v0.7.1'
+    - '!v0.7.*'
+    - '!v0.8.*'
+    - '!v0.9.*'
+    - '!v0.10.*'
+    - '!v0.11.*'
+    - '!v0.12.*'
+    - '!v0.13.0'
+    - '!v0.13.1'
+    version:
+      v(?<version>+({0..9}).+({0..9}).+({0..9})): $<version>
+  - url: https://github.com/arconia-io/arconia-migrations.git
+    start_path: docs
+    branches: ~
+    tags: ~
     version:
       v(?<version>+({0..9}).+({0..9}).+({0..9})): $<version>
 
@@ -56,6 +70,9 @@ antora:
     - require: "@antora/lunr-extension"
       index_latest_only: true
       languages: [en]
+    - require: ./antora-extensions/latest-tag-resolver.js
+      sources:
+        - https://github.com/arconia-io/arconia-migrations.git
 
 asciidoc:
   extensions:
