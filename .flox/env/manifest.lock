@@ -20,18 +20,19 @@
     {
       "attr_path": "go-task",
       "broken": false,
-      "derivation": "/nix/store/d75iigh6jr411wnb6gk1dqwy6ybv4a07-go-task-3.48.0.drv",
+      "derivation": "/nix/store/2r9lnyrn8wq43g5a5g6ryq54m037k0wb-go-task-3.48.0.drv",
       "description": "Task runner / simpler Make alternative written in Go",
       "install_id": "go-task",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
       "name": "go-task-3.48.0",
       "pname": "go-task",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T06:03:34.376670Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T08:55:41.317321Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -40,7 +41,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/sab4xhgi6cs6rnxsx33dxqg2zcir52rm-go-task-3.48.0"
+        "out": "/nix/store/hg0sx6ah2pinw09i8s3gwicq1x54gbvn-go-task-3.48.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -49,18 +50,19 @@
     {
       "attr_path": "go-task",
       "broken": false,
-      "derivation": "/nix/store/4yafn203k3iq871ahgmlk39lyb976lvr-go-task-3.48.0.drv",
+      "derivation": "/nix/store/683gh2hy7c3cgyfdqjcbvwvbay9vcbmh-go-task-3.48.0.drv",
       "description": "Task runner / simpler Make alternative written in Go",
       "install_id": "go-task",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
       "name": "go-task-3.48.0",
       "pname": "go-task",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T06:35:00.986483Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T09:40:21.578825Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -69,7 +71,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/cidnjfhcp1qyxjih6qaa61hfyxy5k5ap-go-task-3.48.0"
+        "out": "/nix/store/6bafb6yz2861yxjljadd1m22v2gryl24-go-task-3.48.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -78,18 +80,19 @@
     {
       "attr_path": "go-task",
       "broken": false,
-      "derivation": "/nix/store/np5hkd93wdzh9s9ynkdk3mds3pg1bifz-go-task-3.48.0.drv",
+      "derivation": "/nix/store/yl56zh18f4j25f6m8mb2p0haz9ypwcvw-go-task-3.48.0.drv",
       "description": "Task runner / simpler Make alternative written in Go",
       "install_id": "go-task",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
       "name": "go-task-3.48.0",
       "pname": "go-task",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T07:05:09.476135Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T10:24:48.495253Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -98,7 +101,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/nxbwqrg7jx4l16q1c37kr510cv0cz1cw-go-task-3.48.0"
+        "out": "/nix/store/xajpc9zjvhmdmwjab8i8grxc248wnzpq-go-task-3.48.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -107,18 +110,19 @@
     {
       "attr_path": "go-task",
       "broken": false,
-      "derivation": "/nix/store/f2xbx67ryzzcxd851bwnc5jcgxb4a032-go-task-3.48.0.drv",
+      "derivation": "/nix/store/ld2437x3giwpdyfb5svhzfgy229l35l5-go-task-3.48.0.drv",
       "description": "Task runner / simpler Make alternative written in Go",
       "install_id": "go-task",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
       "name": "go-task-3.48.0",
       "pname": "go-task",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T07:39:15.248586Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T11:06:45.426748Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -127,7 +131,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/qxs1p264gzz3nficzss2nsp7fs5cdi31-go-task-3.48.0"
+        "out": "/nix/store/ajlbzd5gnxrs1yki1sjf327rjx7qq060-go-task-3.48.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -136,29 +140,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/g2yfx00n1lp9i8ka7nbl11fawc0yfm7n-nodejs-24.14.0.drv",
+      "derivation": "/nix/store/vbx35am7lar9zvwhk4nfl3lysmbd0ils-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
-      "name": "nodejs-24.14.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T06:03:57.707117Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T08:56:05.100848Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "24.14.0",
+      "version": "24.15.0",
       "outputs_to_install": [
-        "out",
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/d5hw52iialz64hvfzfp9qm1gr2fp43kx-nodejs-24.14.0"
+        "out": "/nix/store/3mvbmkd7lmxi3xlka1avra24flwbgjv9-nodejs-24.15.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -167,28 +170,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/jj8rw2gnisil7dw10xi2qdinad9jqp7s-nodejs-24.14.0.drv",
+      "derivation": "/nix/store/zc41z1042wi0d1gmyc8mlwv5av8fds2q-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
-      "name": "nodejs-24.14.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T06:35:36.458758Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T09:40:59.202885Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "24.14.0",
+      "version": "24.15.0",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/vs8zaq8fvbbjqfg4bzn424kn55sj7s7y-nodejs-24.14.0"
+        "out": "/nix/store/rmdjmd0iy5zlyg0j2i1cd0s7ha1562fs-nodejs-24.15.0"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -197,28 +200,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/l9ksrfa960964gqf23yfr7a66a2n18c1-nodejs-24.14.0.drv",
+      "derivation": "/nix/store/f0ay9hny5gn4c0lfrb95xrakm7yf3s2q-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
-      "name": "nodejs-24.14.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T07:05:32.402959Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T10:25:13.022223Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "24.14.0",
+      "version": "24.15.0",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/70ypbaj273w2kk0nrs4vijizyqgbg48v-nodejs-24.14.0"
+        "out": "/nix/store/rhv8jiklgw2bw4ljh4nm3h3r3bpnkcl3-nodejs-24.15.0"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -227,28 +230,28 @@
     {
       "attr_path": "nodejs",
       "broken": false,
-      "derivation": "/nix/store/15s1kk2n6vg180wg04wj2wgnl19f03v7-nodejs-24.14.0.drv",
+      "derivation": "/nix/store/f8i8jydaqs0ngxm97c091zna2mnjb43f-nodejs-24.15.0.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
-      "name": "nodejs-24.14.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "name": "nodejs-24.15.0",
       "pname": "nodejs",
-      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
-      "rev_count": 977467,
-      "rev_date": "2026-04-09T04:48:10Z",
-      "scrape_date": "2026-04-11T07:39:52.537424Z",
+      "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+      "rev_count": 1008282,
+      "rev_date": "2026-05-31T16:09:29Z",
+      "scrape_date": "2026-06-02T11:07:24.655920Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "24.14.0",
+      "version": "24.15.0",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/v2210ar51jddnrcx46m53ivv9palc26m-nodejs-24.14.0"
+        "out": "/nix/store/5a8ysg1jnj8jmzzyfcfw7rvpvnp5rfpa-nodejs-24.15.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
