@@ -32,7 +32,7 @@ jobs:
       uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
     
     - name: Install Flox
-      uses: flox/install-flox-action@c94e7e1ab56ae14fe98bae4fd84384fd135f0c2a # v2.4.0
+      uses: flox/install-flox-action@f6002ed63e483f134001de7b4b45be891e00b09f # v2.5.1
     
     - name: Build Website
       uses: flox/activate-action@7065dcbe5583b7b015f07a8ebd49d7266e3053e8 # v1.1.1
