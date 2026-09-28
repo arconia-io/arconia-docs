@@ -31,16 +31,26 @@ jobs:
     - name: Configure Pages
       uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
     
-    - name: Install Flox
-      uses: flox/install-flox-action@1128abd73431089ab9d871c893b4e72a729354e1 # v2.6.0
-    
+    - name: Install Nix
+      uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31.11.1
+
+    - name: Set up Cachix
+      uses: cachix/cachix-action@38b082610b782e7e93e209c35fd730d399dee866 # v17
+      with:
+        name: devenv
+
+    - name: Install devenv
+      run: nix profile add nixpkgs#devenv
+
+    - name: Build devenv shell
+      run: devenv test
+
     - name: Build Website
-      uses: flox/activate-action@7065dcbe5583b7b015f07a8ebd49d7266e3053e8 # v1.1.1
+      shell: devenv shell bash -- -e {0}
       env:
         ANTORA_SITE_URL: https://docs.arconia.io
-      with:
-        command: task build
-    
+      run: task build
+
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
       with:
